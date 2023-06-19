@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="gallery">
+
+	<!-- 수정 -->
+	<update id="edit">
+		UPDATE GALLERY
+			SET 
+				TITLE = #{title}
+			,	CONTENT = #{content}
+			<if test="changeName != null and changeName != ''">
+				,	ORIGIN_NAME = #{originName}
+				,	CHANGE_NAME = #{changeName}
+			</if>
+			WHERE 	NO = #{no}
+			AND		WRITER_NO = #{writerNo}
+			AND		STATUS = 'O'
+	</update>
+
+
+	<!-- 삭제 -->
+	<update id="del">
+		UPDATE GALLERY
+			SET STATUS = 'X'
+			WHERE NO = #{no}
+	</update>
+
+	<!-- 조회 -->
+	<select id="getGallery" resultType="galleryVo">
+		SELECT 
+		    NO
+		    ,TITLE
+		    ,CONTENT
+		    ,WRITER_NO
+		    ,ORIGIN_NAME
+		    ,CHANGE_NAME
+		    ,ENROLL_DATE
+		    ,STATUS
+		    ,HIT
+		FROM GALLERY
+		WHERE NO = #{no}
+		AND STATUS = 'O'
+	</select>
+	
+	
+	<!-- 글쓰기 -->
+	<insert id="write">
+		INSERT INTO GALLERY
+		(
+		    NO
+		    ,TITLE
+		    ,CONTENT
+		    ,WRITER_NO
+		    ,ORIGIN_NAME
+		    ,CHANGE_NAME
+		)
+		VALUES
+		(
+		    SEQ_GALLERY_NO.NEXTVAL
+		    , #{title}
+		    , #{content}
+		    , #{writerNo}
+		    , #{originName}
+		    , #{changeName}
+		)
+	</insert>
+
+
+	<!-- 리스트 -->
+	<select id="getGalleryList" resultType="galleryVo">
+		SELECT 
+		    NO
+		    ,TITLE
+		    ,CONTENT
+		    ,WRITER_NO
+		    ,ORIGIN_NAME
+		    ,CHANGE_NAME
+		    ,ENROLL_DATE
+		    ,STATUS
+		    ,HIT
+		FROM GALLERY
+		WHERE STATUS = 'O'
+		ORDER BY NO DESC
+	</select>
+
+	
+</mapper>
