@@ -10,6 +10,8 @@
 1.STS<br>
 2.Apache Tomcat 9.0<br>
 3.SQL Developer
+4.Mybatis
+5.maven
 <br>
 <br>
 ## 메인 페이지
