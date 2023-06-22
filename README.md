@@ -40,7 +40,7 @@
 2. Service (<https://github.com/YEON-KIM/PersonalPrj1/blob/main/PersonalPrj1/src/main/java/com/kyw/app/gallery/service/GalleryService.java>)
 3. Dao (<https://github.com/YEON-KIM/PersonalPrj1/blob/main/PersonalPrj1/src/main/java/com/kyw/app/gallery/dao/GalleryDao.java>)
 4. Vo (<https://github.com/YEON-KIM/PersonalPrj1/blob/main/PersonalPrj1/src/main/java/com/kyw/app/gallery/vo/GalleryVo.java>)
-5. Mapper (<https://github.com/YEON-KIM/PersonalPrj1/blob/main/PersonalPrj1/src/main/resources/mybatis/mapper/gallery-mapper.xml>)
+5. Mapper (<https://github.com/YEON-KIM/PersonalPrj1/blob/main/PersonalPrj1/src/main/resources/mybatis/mapper/galley-mapper.xml>)
 ![](image/10.png)
 
 ## 정보
