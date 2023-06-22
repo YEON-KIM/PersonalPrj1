@@ -8,17 +8,23 @@
 1.회원가입 및 로그인<br>
 2.글목록, 글쓰기, 글 수정하기, 글 삭제하기, 파일 업로드, 사진 출력.
 
-![](1.png)
+![](image/1.png)
 
 ## 로그인 및 회원가입
-
-
-
-## 사용 예제
-
-스크린 샷과 코드 예제를 통해 사용 방법을 자세히 설명합니다.
-
-_더 많은 예제와 사용법은 [Wiki][wiki]를 참고하세요._
+1. Controller (<https://github.com/YEON-KIM/PersonalPrj1/blob/main/PersonalPrj1/src/main/java/com/kyw/app/member/controller/MemberController.java>)
+2. Service (<https://github.com/YEON-KIM/PersonalPrj1/blob/main/PersonalPrj1/src/main/java/com/kyw/app/member/service/MemberService.java>)
+3. Dao (<https://github.com/YEON-KIM/PersonalPrj1/blob/main/PersonalPrj1/src/main/java/com/kyw/app/member/dao/MemberDao.java>)
+4. Vo (<https://github.com/YEON-KIM/PersonalPrj1/blob/main/PersonalPrj1/src/main/java/com/kyw/app/member/vo/MemberVo.java>)
+5. Mapper (<https://github.com/YEON-KIM/PersonalPrj1/blob/main/PersonalPrj1/src/main/resources/mybatis/mapper/member-mapper.xml>)
+![](image/2.png)
+<br>
+## 글쓰기
+1. Controller (<https://github.com/YEON-KIM/PersonalPrj1/blob/main/PersonalPrj1/src/main/java/com/kyw/app/board/controller/BoardController.java>)
+2. Service (<https://github.com/YEON-KIM/PersonalPrj1/blob/main/PersonalPrj1/src/main/java/com/kyw/app/board/service/BoardService.java>)
+3. Dao (<https://github.com/YEON-KIM/PersonalPrj1/blob/main/PersonalPrj1/src/main/java/com/kyw/app/board/dao/BoardDao.java>)
+4. Vo (<https://github.com/YEON-KIM/PersonalPrj1/blob/main/PersonalPrj1/src/main/java/com/kyw/app/board/vo/BoardVo.java>)
+5. Mapper (<https://github.com/YEON-KIM/PersonalPrj1/blob/main/PersonalPrj1/src/main/resources/mybatis/mapper/Boardr-mapper.xml>)
+![](image/6.png)
 
 ## 개발 환경 설정
 
