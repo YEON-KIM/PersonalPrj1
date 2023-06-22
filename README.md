@@ -2,26 +2,17 @@
 > 복습용 개인적인 프로젝트
 
 [![NPM Version][npm-image]][npm-url]
-[![Build Status][1.png]][travis-url]
+[![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
 
-한 두 문단으로 프로젝트 소개 글을 작성합니다.
+1.회원가입 및 로그인<br>
+2.글목록, 글쓰기, 글 수정하기, 글 삭제하기, 파일 업로드, 사진 출력.
 
-![](../header.png)
+![](1.png)
 
-## 설치 방법
+## 로그인 및 회원가입
 
-OS X & 리눅스:
 
-```sh
-npm install my-crazy-module --save
-```
-
-윈도우:
-
-```sh
-edit autoexec.bat
-```
 
 ## 사용 예제
 
